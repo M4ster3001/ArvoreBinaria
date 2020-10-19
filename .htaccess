@@ -1,0 +1,32 @@
+<IfModule mod_rewrite.c> 
+
+	RewriteEngine on
+	#RewriteCond %{SERVER_PORT} 80
+	RewriteRule ^(.*)\/$ http://localhost:8095/ [L] 
+
+	#Login
+	RewriteRule ^/login?$ /index.php?p=login
+
+	RewriteRule ^/inicio?$ /index.php?p=inicio
+
+	#Usuarios
+	RewriteRule ^/usuario/listar?$ /index.php?p=usuario&m=listar
+	RewriteRule ^/usuario/salvar?$ /index.php?p=usuario&m=salvar
+
+	#Usuarios
+	RewriteRule ^/pontos/listar?$ /index.php?p=pontos&m=listar
+	RewriteRule ^/pontos/salvar?$ /index.php?p=pontos&m=salvar
+
+	RewriteCond %{SCRIPT_FILENAME} !-d
+	RewriteCond %{SCRIPT_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
+
+</IfModule> 
+
+# Não mostrar listagens de diretório
+Options -Indexes
+
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css)$">
+	Header unset Last-Modified
+</FilesMatch>
