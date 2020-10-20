@@ -37,8 +37,8 @@ class Database
 	
 	//Envia o erro para o chat do telegram
 	private function msgErro($dados, $teste){
-		$chat_id = "396074366";
-		$token = "1250497161:AAEjCsgZVVjsO7hwB2RSUAcX_OmLS9PkUMI";
+		$chat_id = "";
+		$token = "";
 		$msg = 'SQL: '.$dados;
 		$curl = curl_init();
 		curl_setopt($curl, CURLOPT_URL, "https://api.telegram.org/bot$token/");
