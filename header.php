@@ -8,6 +8,8 @@
     <meta content="" name="description"/>
 
     <link href="/./src/styles/global.css" rel="stylesheet" type="text/css" />
+    <link href="/./src/plugins/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link href="/./src/plugins/materialdesignicon/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
 
     <?php
 

@@ -173,5 +173,21 @@ class Database
             return $er->errorInfo;
 		}
 	}
+
+	function procedure( $dados)
+	{
+		$this->st = $this->conn->prepare( 'CALL ' . $dados );
+		//echo $this->stringSql;
+		try{
+
+			return $this->st->execute();
+		}catch(PDOException $er){
+
+            $dados = $er->errorInfo[2].'  /  '.$this->stringSql.'   /   '.( implode( ',', $condicao ) );
+            $this->msgErro( $dados, $er->errorInfo[2] );
+            
+            return $er->errorInfo;
+		}
+	}
 	
 }
