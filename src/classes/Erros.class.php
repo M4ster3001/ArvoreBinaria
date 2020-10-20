@@ -84,8 +84,8 @@ Class Erros {
 		if( $jatem == 0 ) {
 			$i = $_SESSION['poker']['mensagens'];
 			$_SESSION['poker']['mensagens'] .= $teste.', ';
-			$chat_id = "396074366";
-			$token = "1250497161:AAEjCsgZVVjsO7hwB2RSUAcX_OmLS9PkUMI";
+			$chat_id = "";
+			$token = "";
 			$msg = ( empty( $_SESSION['poker']['cod_clube'] ) ? '' : 'Clube: '.$_SESSION['poker']['cod_clube'] ).' - '.$dados;
 			$curl = curl_init( );
 			curl_setopt( $curl, CURLOPT_URL, "https://api.telegram.org/bot$token/" );
