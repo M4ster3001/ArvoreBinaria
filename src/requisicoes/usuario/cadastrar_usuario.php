@@ -47,6 +47,6 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
         $retorno['message'] = 'Falha ao salvar o usuário';
     }
 
-    echo json_encode($cod_usuario);
+    echo json_encode($retorno);
 }
 ?>

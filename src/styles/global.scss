@@ -36,6 +36,22 @@
 .font-purple, .purple { color: #8e44ad !important; }
 .font-purple-studio, .purple-studio { color: #8e44ad !important; }
 
+
+.btn {
+    flex: 1;
+    text-transform: uppercase;
+    height: 100%;
+    border: 1px #525E64 solid;
+    margin-left: 8px;
+    padding: 2px 5px;
+    border-radius: 0.5rem;
+    
+        .btn-outback {
+            background-color: none !important;
+            background: none !important;
+        }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -58,7 +74,98 @@ a, button {
     cursor: pointer;
 }
 
+.header {
+    
+    .content-header {
+
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem auto;
+        background: #fff;
+        width: 100%;
+        max-width: 1100px;
+        padding: 1rem;
+        left: 8px;
+    }
+}
+
+    
 .content {
     width: 100vw;
     height: 100vh;
+
+    .content-wrapper {
+        width: 100%;
+        max-width: 1100px;
+        height: 100%;
+        margin: 0 auto;
+        background: #FFF;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .header {
+            width: 100%;
+            margin: 1rem 0.5rem;
+            padding: 0 0.5rem;
+
+            .des_titulo {
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 36px;
+                border-bottom: 1px solid #cacaca;
+            }
+        }
+
+        main {
+            flex: 1;
+            
+            .form-control {
+
+                input[type=text],
+                input[type=email],
+                input[type=password],
+                input[type=number] {
+                    flex: 1;
+                    background: #F0F0F5;
+                    border-radius: 8px;
+                    border: 0;
+                    padding: 16px 24px;
+                    font-size: 16px;
+                    color: #6C6C80;
+                }
+                
+                select {
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    flex: 1;
+                    background: #F0F0F5;
+                    border-radius: 8px;
+                    border: 0;
+                    padding: 16px 24px;
+                    font-size: 16px;
+                    color: #6C6C80;
+                }
+                
+                input::placeholder {
+                    color: #A0A0B2;
+                }
+                
+                label {
+                    font-size: 14px;
+                    margin-bottom: 8px;
+                }
+                
+                & {
+                    margin-bottom: 0.8rem;
+                }
+            }
+        }
+    }
 }

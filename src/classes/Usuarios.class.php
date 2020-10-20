@@ -26,6 +26,11 @@
 
             return $this->seleciona('tb_vw_usuarios_indica', array('*'));
         }
+
+        function ListarUsuarios() {
+
+            return $this->seleciona('tb_usuarios', array('des_nome', 'cod_usuario'), NULL, NULL, 'des_nome ASC');
+        }
     }
 
 ?>

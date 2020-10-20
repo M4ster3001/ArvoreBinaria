@@ -27,16 +27,21 @@
     ?>  
 
     <div class="header">
-        <div class="logo"> </div>
-        <div class="menu">
-            <button class="btn btn-outback btn-green">Usuarios</button>
-            <button class="btn btn-outback btn-purple">Pontos</button>
-        </div>
-        <div class="opc">
-            <a href="#">Logout</a>
+        <div class="content-header">
+            <div class="logo"> </div>
+            <div class="menu">
+                <a class="btn btn-outback btn-green" href="/usuarios/salvar/">Usuarios</a>
+                <a class="btn btn-outback btn-purple" href="/pontos/salvar/">Pontos</a>
+                <a class="btn btn-outback btn-purple" href="/pontos/listar/">Listar Pontos</a>
+            </div>
+            <div class="opc">
+                <a href="#">Logout</a>
+            </div>
         </div>
     </div>
 
     </head>
 
     <body>
+    
+        <div class="alert-message display-hide"></div>

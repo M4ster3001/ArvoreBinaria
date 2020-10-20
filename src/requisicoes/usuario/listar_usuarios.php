@@ -14,7 +14,9 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 	$err = new Erros( );
     set_error_handler( array( $err, "handleError" ) );
 
-    $lst_usuario = $usuarios->ListarUsuariosIndicar();
+    $des_parametro = ( isset( $_POST['parametro'] ) ? filter_var( trim( addslashes( $_POST['parametro'] ) ), FILTER_SANITIZE_STRING ) : NULL );
+
+    $lst_usuario = !empty($des_parametro) ? $usuarios->ListarUsuariosIndicar() : $usuarios->ListarUsuarios();
 
     if( $lst_usuario ) {
 
