@@ -10,25 +10,25 @@ class Database
 	private $stringSql;
 	private $st;
 
-	function __construct()
+	function __construct( )
 	{
-        global $config;
-        
-        $this->dsn  = "{$config['driver']}:host={$config['host']};dbname={$config['dbname']}";
-        $this->base = $config['dbname'];
-        $this->user = $config['user'];
-        $this->pass = $config['pass'];
+		global $config;
+
+		$this->dsn  = "{$config['driver']}:host={$config['host']};dbname={$config['dbname']}";
+		$this->base = $config['dbname'];
+		$this->user = $config['user'];
+		$this->pass = $config['pass'];
 
 		try{
-            
-			$this->conn->exec("SET CHARACTER SET utf8");
-			$this->conn->exec("SET time_zone='America/Sao_Paulo'");
+			$this->conn	= new PDO( $this->dsn, $this->user, $this->pass );
+			$this->conn->exec( "SET CHARACTER SET utf8" );
+			$this->conn->exec( "SET time_zone='America/Sao_Paulo'" );
 		}
-		catch(PDOException $e)
+		catch( PDOException $e )
 		{
-			print "Error Founds: ".$e->getMessage().PHP_EOL;
+			print "Error Founds: ".$e->getMessage( ).PHP_EOL;
 			
-			die();
+			die( );
 		}
 
 		$this->conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );

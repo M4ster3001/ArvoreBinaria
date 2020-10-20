@@ -1,5 +1,4 @@
 <?php
-
     class Uteis {
         
         function mask( $val, $mask ) {

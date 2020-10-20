@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
+.md-12 {
+  font-size: 12px;
+}
+
+.md-14 {
+  font-size: 14px;
+}
+
+.md-16 {
+  font-size: 16px;
+}
+
+.md-18 {
+  font-size: 18px;
+}
+
+.md-20 {
+  font-size: 20px;
+}
+
+.md-22 {
+  font-size: 22px;
+}
+
+.md-24 {
+  font-size: 24px;
+}
+
+.md-26 {
+  font-size: 26px;
+}
+
+.md-28 {
+  font-size: 28px;
+}
+
+.md-30 {
+  font-size: 30px;
+}
+
+.font-default, .dark {
+  color: #2C3E50 !important;
+}
+
+.font-black, .black {
+  color: #000 !important;
+}
+
+.font-white, .white {
+  color: #fff !important;
+}
+
+.font-orange, .orange {
+  color: #FF9900 !important;
+}
+
+.font-yellow-gold, .yellow-gold {
+  color: #E87E04 !important;
+}
+
+.font-yellow-saffron, .yellow-saffron {
+  color: #F4D03F !important;
+}
+
+.font-green-jungle, .green {
+  color: #26c281 !important;
+}
+
+.font-green-turquoise, .green-turquoise {
+  color: #36d7b7 !important;
+}
+
+.font-green-sharp, .green-seagreen {
+  color: #2ab4c0 !important;
+}
+
+.font-red-thunderbird, .red {
+  color: #d91e18 !important;
+}
+
+.font-red-mint, .red-mint {
+  color: #e43a45 !important;
+}
+
+.font-blue-steel, .blue-steel {
+  color: #4b77be !important;
+}
+
+.font-blue-hoki, .blue-hoki {
+  color: #67809f !important;
+}
+
+.font-blue-dark, .blue-dark {
+  color: #5E738B !important;
+}
+
+.font-purple, .purple {
+  color: #8e44ad !important;
+}
+
+.font-purple-studio, .purple-studio {
+  color: #8e44ad !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  position: relative;
+  font: 400 14px Roboto, sans-serif;
+  background: #ebf2f5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a, button {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+}
+/*# sourceMappingURL=global.css.map */
