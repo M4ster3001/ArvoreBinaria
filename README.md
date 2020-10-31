@@ -8,8 +8,8 @@ Iniciando desafio da arvore binaria
     - estrutura [x]
 
     - tela de cadastro de usuario [x]
-        - criar a função para criar usuario, uma procedure para cadastrar a indicação e checar para qual lado o usuário será atribuido.
-        - criar o listar usuarios para indicações e populando no select de indicação.
+        - criar a função para criar usuario, uma procedure para cadastrar a indicação e checar para qual lado o usuário será atribuido.[x]
+        - criar o listar usuarios para indicações e populando no select de indicação.[x]
     - tela de login []
     - tela de cadastro de pontos [x]
     - tela de listar pontos []
