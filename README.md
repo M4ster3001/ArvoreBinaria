@@ -18,7 +18,7 @@ Iniciando desafio da arvore binaria
 
     -- Executando
         - o localhost deve está na porta 8095
-        - criado um banco com o nome bd_arvorebinaria
+        - criar um banco com o nome bd_arvorebinaria
         - executa o script bd.sql que está dentro da pasta sql
         
         - os caminhos
